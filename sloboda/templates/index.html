@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block header %}
+<header>
+    	<!-- Featured Slider | START -->
+        <div id="featured">
+        	<div class="slider">
+            	<div class="item">
+                    <div class="details">
+                        <div class="title"><span>Абсолютная роскошь</span></div>
+                        <div class="buttoncontainer"><a href="/contact" class="button"><span data-hover="О нас">Информация</span></a></div>
+                    </div>
+                    <img alt="" src="{% static "images/14HKa66Q5GE.jpg" %}"/>
+                </div>
+            </div>
+
+        </div>
+        <!-- Featured Slider | END -->
+        <!-- Check Rates Banner | START -->
+    {% include "check.html" %}
+        <!-- Check Rates Banner | END -->
+    </header>
+{% endblock%}
+
+{% block content %}
+<main>
+    	<div class="centre">
+            <h1>ИСПЫТАЙТЕ РОСКОШЬ  & <strong>НАЙДИТЕ СВОЮ БАЗУ</strong></h1>
+            <p>Гостевой комплекс расположен в уютном и комфортном месте, в самом сердце природы – сосновом  бору на берегу реки Волга.
+         Мы предлагаем к вашим услугам комфортабельные терема с индивидуальным отоплением, оснащенные всем  необходимым: современная бытовая техника, посуда, удобная и красивая мебель, спутниковое телевидение, караоке, мангалы для приготовления шашлыка и барбекю, а также развлекательный и спортивный инвентарь для вас и ваших детей.
+          Гостевой комплекс "Матушка Роща" отличает схема постройки – клубного типа, расположенная на небольшой, охраняемой территории, но в тоже время очень уютная, где каждый гость будет чувствовать себя как дома.</p>
+            <!-- USP Boxes | START -->
+            <section class="usp">
+            	<div class="box">
+                	<i class="fa fa-trophy"></i>
+                	<h3>Первый в рейтинге</h3>
+                </div>
+                <div class="box">
+                	<i class="fa fa-cutlery"></i>
+                	<h3>Удостоенный наград ресторан</h3>
+                </div>
+                <div class="box">
+                	<i class="fa fa-user"></i>
+                	<h3>24 часа на связи</h3>
+                </div>
+            </section>
+            <!-- USP Boxes | END -->
+        </div>
+    </main>
+{% endblock %}
